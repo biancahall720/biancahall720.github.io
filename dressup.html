@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <link rel="stylesheet" href="dressup.css">
+    <script src="dressup.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Poiret+One');
+      @import url('https://fonts.googleapis.com/css?family=Cabin+Sketch');
+      @import url('https://fonts.googleapis.com/css?family=Caveat+Brush');
+      @import url('https://fonts.googleapis.com/css?family=Rakkas');
+      @import url('https://fonts.googleapis.com/css?family=Vidaloka');
+
+    </style>
+  </head>
+<!-- Navigation Bar -->
+  <body background="gradient2.png">
+
+    <input id="burger" type="checkbox" />
+
+    <label for="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <nav>
+      <div class="tab">
+        <button class="tablink" onclick="openPage('Home', this, '#DC758F');" id="defaultOpen">Home</button>
+        <button class="tablink" onclick="openPage('About', this, '#DC758F');">About</button>
+        <button class="tablink" onclick="openPage('Mission', this, '#DC758F');">Mission and Facts</button>
+        <button class="tablink" onclick="openPage('Design', this, '#DC758F');"myFunction()""id="playbutton">Design</button>
+      </div>
+    </nav>
+
+
+
+    <div id="Home" class="tabcontent">
+
+      <h1>
+      <div class="frontpage">
+        <img src="girls.png" alt="Snow" style="width:40%">
+        <div class="centered"><span class ="title-FashionandModern" style="color: white;">Fashion and Modest</span></div>
+      </div>
+</h1>
+<!-- Play Button -->
+
+<button class="btn striped-shadow dark" onclick="gotodesign()" ><span>PLAY!</span></button>
+
+
+        <!-- <img src="women.png" style="width:800px;height:auto;position:center;top:450px;"> -->
+
+    </div>
+
+    <div id="About" class="tabcontent">
+    <!-- <style>
+    #About{
+      content: "";
+      clear: both;
+      display: table;
+    }
+    </style> -->
+    <p><h1><span class ="Aboutus" style = color: "white;" style="position: absolute; text-align: left;">About    Us</span></h1> </p>
+      <!-- <h1 class = "Aboutus" ><strong>About Us</strong></h1> -->
+      <img src="strong.png" style="width:200px;height:auto;position:absolute;left:900px;top:120px;">
+<hr>
+      <p><h5><span class ="meet" >Meet the F.A.M.!</span></h5> </p>
+
+      <img class="lol" src="groupic.png" style="width:400px;height:auto;position:absolute;left:10px;top:400px;">
+      <p><span class="aa" align="right">We are a group of 5 girls who are interested in coding and want to make a difference in the world. Since we all have taken the opportunity to participate in Girls Who Code we made a game in order to combat Islamaphobia.We wanted to combine our loves of fashion, coding, and awareness of social
+        issues to come up a project that could help others. It all started when we all played dress up game as a kids and noticed
+        the lack of diversity in the games. We wanted to see more characters with clothing from different cultures, as well as representative of different religions.
+        For example in Islam, clothing is more modest, and we wanted clothing choices in the game to reflect that.
+        By introducing young girls to people who look different than what society depicts them as, young girls get a wider
+        perspective on the world.</span></p>
+
+
+  </div>
+
+      <div id="Mission" class="tabcontent">
+
+
+  <p><h1><span class ="MissionandFacts" style = color: "white;">Mission</span></h1> </p>
+
+        <p>
+          <audio controls>
+            <source src="fairy_tale.mp3" type="audio/mpeg">
+
+          </audio>
+        </p>
+        <p>To tackle the lack of diversity in games and to spread awareness about Islamaphobia.</p>
+        <p>Islamaphobia</p>
+          <p>Definition: dislike of or prejudice against Islam or Muslims, especially as a political force.</p>
+        <img src="http://www.ips-dc.org/wp-content/uploads/2017/12/shutterstock_607616117-695x464.jpg" width="300" height=auto alt= "Islamaphobia" style="position:absolute;top:350px;left:10px;"><img src= "https://cdn.vox-cdn.com/thumbor/Sz_LDZqLnKzTfbjc02FABopyqqM=/0x0:3900x2600/1200x800/filters:focal(1572x154:2196x778)/cdn.vox-cdn.com/uploads/chorus_image/image/53047341/GettyImages_633249948.0.jpg"width="250" height="auto" alt= "Islamaphobia" style="position:absolute;left:1150px;top:350px;"><img src="https://www.peoplesworld.org/wp-content/uploads/2016/09/stopislamophobia960x540-wordpress.jpg"width="400" height="350" alt= "Islamaphobia">
+        <ul>
+          <h6>-Muslim women wear head covering(hijab)in fulliment of God's decree to dress modestly.</li>
+              -Anousheh Ansari is the first Muslim woman in space</li>
+              -Islam is the second largest religion in the world, having 1.8 billion followers.</li>
+          </h6>
+        </ul>
+        <ul>
+          <h3>-Since 2006 Tatarstan, Russia has been hosting the festival and competition called "Islamic Clothes". Designers and stylists from Russia,Turkey, Iran, Iraq, Kuwait and UAE participate.</li>
+              -One of the most powerful women in Islamic history was Khadija, prophet Muhammad’s wife. She was a successful businesswoman and also the first person to accept Islam</li>
+          </h3>
+        </ul>
+      </div>
+
+      <div id="Design" class="tabcontent">
+
+        <!-- <p><div style="margin-top:-100px;font-size:200%;"><font color="purple"><strong>Design your character!</strong></font></div></p> -->
+        <div class = "name">
+          Name: <input type="text" id= "username" name="fullname"><br>
+
+          <button onclick= "displayname()">
+            <span>Submit</span>
+          </button>
+
+        </div>
+              </input>
+
+        <!-- <div id="main" style="left:510px;top:130px;position:absolute;"><img src ="model.png" style= "width:350px;height:auto"></div> -->
+
+        <!-- Dresses and Pants/Skirts-->
+
+        <div id = "dresses">
+          <div id="blackdress" style="left:430px;top:130px;position:absolute;"><img src = "dress1.png" style= "width:516px;height:auto"></div>
+          <div id="bluedress" style="left:397px;top:139px;position:absolute;"><img src ="bluedress.png" style= "width:420px;height:auto"></div>
+          <div id="flowypants" style="left:608px;top:350px;position:absolute;"><img src ="flowypants.png" style= "width:170px;height:auto"></div>
+          <div id="astronaut" style="left:550px;top:130px;position:absolute;"><img src ="spacesuit.png" style= "width:271px;height:auto"></div>
+          <div id="skirt" style="left:593px;top:340px;position:absolute;"><img src ="skirt.png" style= "width:200px;height:auto"></div>
+          <div id="pant" style="left:565px;top:340px;position:absolute;"><img src ="pants.png" style= "width:240px;height:auto"></div>
+          <div id="greypants" style="left:628px;top:350px;position:absolute;"><img src ="greypants.png" style= "width:130px;height:auto"></div>
+          <div id="doctor" style="left:610px;top:240px;position:absolute;"><img src ="doctor.png" style= "width:155px;height:auto"></div>
+          <div id="judgerobes" style="left:600px;top:248px;position:absolute;"><img src ="judgerobes.png" style= "width:180px;height:auto"></div>
+          <div id="purpledress" style="left:548px;top:241px;position:absolute;"><img src ="purpledress.png" style= "width:219px;height:auto"></div>
+          <div id="greydress" style="left:603px;top:254px;position:absolute;"><img src ="greydress.png" style= "width:190px;height:auto"></div>
+          <div id="reddress" style="left:616px;top:247px;position:absolute;"><img src ="reddress.png" style= "width:150px;height:auto"></div>
+          <div id="transparent" style="left:600px;top:248px;position:absolute;"><img src ="transparent.png" style= "width:180px;height:auto"></div>
+        </div>
+        <!-- Shirts -->
+        <div id = "Shirts">
+          <div id="codeshirt" style="left:625px;top:250px;position:absolute;"><img src ="codeshirt.png" style= "width:130px;height:auto"></div>
+          <div id="blueshirt" style="left:618px;top:230px;position:absolute;"><img src ="blueshirt.png" style= "width:140px;height:auto"></div>
+          <div id="jeanshirt" style="left:604px;top:255px;position:absolute;"><img src ="jeanshirt.png" style= "width:170px;height:auto"></div>
+          <div id="pinkshirt" style="left:562px;top:205px;position:absolute;"><img src ="pinkshirt.png" style= "width:258px;height:auto"></div>
+          <div id="pinksweater" style="left:600px;top:251px;position:absolute;"><img src ="pinksweater.png" style= "width:185px;height:auto"></div>
+          <div id="transparent" style="left:600px;top:248px;position:absolute;"><img src ="transparent.png" style= "width:180px;height:auto"></div>
+
+      </div>
+
+        <!-- Hair Accessories -->
+        <div id = "hairpiece" >
+          <div id="redhijab" style="left:609.5px;top:144px;position:absolute;"><img src ="hijab.png" style= "width:155px;height:auto"></div>
+          <div id="orangehijab" style="left:622.5px;top:142px;position:absolute;"><img src ="orangehijab.png" style= "width:129px;height:auto"></div>
+          <div id="yellowhijab" style="left:629px;top:143px;position:absolute;"><img src ="yellowhijab.png" style= "width:114px;height:auto"></div>
+          <div id="greenhijab" style="left:612.5px;top:143px;position:absolute;"><img src ="greenhijab.png" style= "width:158px;height:auto"></div>
+          <div id="bluehijab" style="left:618px;top:142px;position:absolute;"><img src ="bluejihab.png" style= "width:133px;height:auto"></div>
+          <div id="purplehijab" style="left:618px;top:140px;position:absolute;"><img src ="purplehijab.png" style= "width:145px;height:auto"></div>
+          <div id="headpiece" style="left:602px;top:40px;position:absolute;"><img src ="headpiece.png" style= "width:170px;height:auto"></div>
+          <div id="transparent" style="left:600px;top:248px;position:absolute;"><img src ="transparent.png" style= "width:180px;height:auto"></div>
+
+        </div>
+
+      <!-- Hairstyles -->
+        <div id = "hairstyles" >
+          <div id="blonde" style = "left: 610px; top: 80px; position: absolute; "> <img src="hair1.png" style= "width:160px; height: auto;"> </div>
+          <div id="blackhair" style="left:620px;top:142px;position:absolute;"><img src ="blackhair.png" style= "width:130px;height:auto"></div>
+          <div id="shorthair" style="left:607px;top:125px;position:absolute;"><img src ="shorthair.png" style= "width:160px;height:auto"></div>
+          <div id="braidedhair" style="left:640px;top:135px;position:absolute;"><img src ="braidedhair.png" style= "width:90px;height:auto"></div>
+          <div id="redhair" style="left:647px;top:133px;position:absolute;"><img src ="redhair.png" style= "width:100px;height:auto"></div>
+          <div id="pinkhair" style="left:612px;top:140px;position:absolute;"><img src ="pinkhair.png" style= "width:135px;height:auto"></div>
+          <div id="whitehair" style="left:620px;top:140px;position:absolute;"><img src ="whitehair.png" style= "width:125px;height:auto"></div>
+          <div id="updo" style="left:649px;top:105px;position:absolute;"><img src ="updo.png" style= "width:80px;height:auto"></div>
+          <div id="longhair" style="left:606px;top:135px;position:absolute;"><img src ="longhair.png" style= "width:180px;height:auto"></div>
+          <div id="transparent" style="left:600px;top:248px;position:absolute;"><img src ="transparent.png" style= "width:180px;height:auto"></div>
+
+        </div>
+        <!-- Shoes -->
+        <div id = "shoes">
+          <div id="brownboots" style = "left: 625px; top: 595px; position: absolute; "> <img src="brownboots.png" style= "width:125px; height:auto;"> </div>
+          <div id="blackboots" style = "left: 624px; top: 580px; position: absolute; "><img src="blackboots.png" style= "width:130px; height: auto;"> </div>
+          <div id="silvershoes" style= "left: 630px;top:630px;position:absolute;"><img src ="silversneakers.png" style= "width:115px; height: 50px"></div>
+
+          <div id="transparent" style= "left: 600px;top:248px;position:absolute;"><img src ="transparent.png" style= "width:300px; height:auto"></div>
+
+        </div>
+        <!-- Skin Tones -->
+        <div id = "skintones">
+          <div id="main" style="left:510px;top:130px;position:absolute;"><img src ="model.png" style= "width:350px;height:auto"></div>
+          <div id="model2" style="left:510px;top:130px;position:absolute;"><img src ="model2.png" style= "width:350px;height:auto"></div>
+          <div id="model3" style="left:510px;top:130px;position:absolute;"><img src ="model3.png" style= "width:350px;height:auto"></div>
+          <div id="model4" style="left:510px;top:130px;position:absolute;"><img src ="model4.png" style= "width:350px;height:auto"></div>
+          <div id="model5" style="left:510px;top:130px;position:absolute;"><img src ="model5.png" style= "width:350px;height:auto"></div>
+        </div>
+
+        <div id = "background">
+          <div id="back1" style="left:510px;top:130px;position:absolute;"><img src ="stage.jpg" style= "width:350px;height:auto"></div>
+          <div id="moon" style="left:510px;top:130px;position:absolute;"><img src ="transparent.png" style= "width:350px;height:auto"></div>
+        </div>
+
+
+
+<!-- Background button -->
+
+        <div class= "container">
+            <img src ="moon.jpg" style="width:120px; height:120px; position:absolute;top:410px;left:1090px;" alt="background">
+            <button class="btn" onclick = "myBackground()" style="position: absolute; left:1150px;top:470px;">Background</button>
+            <!-- <input type="range" min="1" max="100" value="25" class="slider" id="myRange"> -->
+           </div>
+
+
+<!-- Skin Color Button -->
+        <div class="container">
+            <img src="skincolorbutton.png" style="width:120px; height:120px;position:absolute;left:1090px;" alt="Skin">
+             <button class="btn" onclick = "mySkin()" style="left:1150px;top:60px;">Skin</button>
+             <!-- <input type="range" min="1" max="100" value="25" class="slider" id="myRange"> -->
+          </div>
+<!-- Hairstyles Button -->
+        <div class = "container">
+            <img src="hair.jpeg" style="width:120px;height:120px;position:absolute;left:1090px;top:130px;"alt="hairstyles">
+            <button class="btn" onclick = "myHair()"alt="head Accessories" style="left:1150px;top:189px">Hair</button>
+        </div>
+<!-- Head Accessories Button -->
+          <div class = "container">
+            <img src="headacce.jpg" alt="Head Accessories" style="width:120px;height:120px;position:absolute;left:1090px;top:260px;">
+            <button class="btn"style="width:85px;height:60px;left:1150px;top:320px" alt="head Accessories" onclick = "headacce()" >Head Access.</button>
+          </div>
+<!-- Shirts Button -->
+        <div class = "container">
+            <img src="shirts.jpg" alt="Tops" style= "width:120px; height:120px;">
+            <button class= "btn" onclick = "myTops()" style= "width:85px; height:60px;"alt="Tops">Tops</button>
+      </div>
+<!-- Dress and Bottoms Button -->
+          <div class = "container">
+              <img src="clothes.jpg" alt="Clothes" style= "width:120px; height:120px;"alt="Skin">
+            <button class= "btn" onclick = "myDresses()" style= "width:85px; height:60px;"alt="head Accessoriess">Dresses & Bottoms</button>
+          </div>
+<!-- Shoes Button -->
+
+    <div class = "container">
+      <img src="shoespattern.png" style= "width:120px; height:120px;"alt="Shoes">
+      <button class="btn" onclick = "myShoes()" style= "width:85px; height:60px;"alt="head Accessories" >Shoes</button>
+  </div>
+
+
+
+
+  <audio controls>
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="fairy_tale.mp3" type="audio/mpeg">
+    <source src="music_mix1.mp3" type="audio/mpeg">
+
+  </audio>
+
+
+  <div id="namedisplay" > </div>
+  <svg class= "box" width="400" height="180" style="position:absolute;top:200px;">
+    <rect width="250" height="50" style="fill:red;stroke:black;stroke-width:5;opacity:0.25;"/>
+  </svg>
+
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  .oval {
+    height: 50px;
+    width: 100px;
+    background-color: #4286f4;
+    border-radius: 50%;
+  }
+</style> -->
+<!--<div id="namedisplay" > </div>
+
+</div> -->
+
+<script>
+function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+    }
+
+document.getElementById("defaultOpen").click();
+
+var headindex = 0
+function headacce(){
+    var headpiece = document.getElementById("hairpiece");
+    var innerDivs = headpiece.getElementsByTagName("DIV");
+    for(var i=0; i<innerDivs.length; i++)
+    {
+         innerDivs[i].style.display = "none";
+
+    }
+    innerDivs[headindex].style.display = "block";
+    headindex++;
+    if (headindex >= innerDivs.length)
+    {
+      headindex = 0;
+    }
+  }
+
+  var shirtindex = 0
+  function myTops(){
+      var shirts = document.getElementById("Shirts");
+      var innerDivs = shirts.getElementsByTagName("DIV");
+      for(var i=0; i<innerDivs.length; i++)
+      {
+           innerDivs[i].style.display = "none";
+
+      }
+      innerDivs[shirtindex].style.display = "block";
+      shirtindex++;
+      if (shirtindex >= innerDivs.length)
+      {
+        shirtindex = 0;
+      }
+    }
+
+
+var dressindex = 0
+function myDresses() {
+  var dresses = document.getElementById("dresses");
+  var innerDivs = dresses.getElementsByTagName("DIV");
+  for(var i=0; i<innerDivs.length; i++)
+  {
+       innerDivs[i].style.display = "none";
+
+  }
+
+  innerDivs[dressindex].style.display = "block";
+  dressindex++;
+  if (dressindex >= innerDivs.length)
+  {
+    dressindex = 0;
+  }
+}
+var hairindex = 0
+function myHair(){
+    var hairstyles = document.getElementById("hairstyles");
+    var innerDivs = hairstyles.getElementsByTagName("DIV");
+    for(var i=0; i<innerDivs.length; i++)
+    {
+         innerDivs[i].style.display = "none";
+
+    }
+    innerDivs[hairindex].style.display = "block";
+    hairindex++;
+    if (hairindex >= innerDivs.length)
+    {
+      hairindex = 0;
+    }
+  }
+  var shoesindex = 0
+  function myShoes(){
+      var shoes = document.getElementById("shoes");
+      var innerDivs = shoes.getElementsByTagName("DIV");
+      for(var i=0; i<innerDivs.length; i++)
+      {
+           innerDivs[i].style.display = "none";
+
+      }
+      innerDivs[shoesindex].style.display = "block";
+      shoesindex++;
+      if (shoesindex >= innerDivs.length)
+      {
+        shoesindex = 0;
+      }
+    }
+
+    var skinindex = 0
+    function mySkin(){
+        var skin = document.getElementById("skintones");
+        var innerDivs = skin.getElementsByTagName("DIV");
+        for(var i=0; i<innerDivs.length; i++)
+        {
+             innerDivs[i].style.display = "none";
+
+        }
+        innerDivs[skinindex].style.display = "block";
+        skinindex++;
+        if (skinindex >= innerDivs.length)
+        {
+          skinindex = 0;
+        }
+      }
+
+      var backindex = 0
+      function myBackground(){
+          var back = document.getElementById("background");
+          var innerDivs = back.getElementsByTagName("DIV");
+          for(var i=0; i<innerDivs.length; i++)
+          {
+               innerDivs[i].style.display = "none";
+
+          }
+          innerDivs[backindex].style.display = "block";
+          backindex++;
+          if (backindex >= innerDivs.length)
+          {
+            backindex = 0;
+          }
+        }
+
+
+</script>
+
+
+  </body>
+</html>
